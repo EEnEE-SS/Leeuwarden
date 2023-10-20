@@ -1,0 +1,12 @@
+--// Lock Car
+game.ReplicatedStorage.Auto.LockCar:InvokeServer()
+--// Unlock Car
+game.ReplicatedStorage.Auto.UnlockCar:InvokeServer()
+--// UnCuff Self
+game.Players.LocalPlayer.Cuffed.Value = false
+--// No Detained
+game.Players.LocalPlayer.Detained.Value = false
+--// Never Hide Tool
+game.Players.LocalPlayer.PlayerScripts.HideTools:Destroy()
+--// Halloween Sky Gone
+game.Lighting.HalloweenSky:Destroy()
