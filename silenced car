@@ -1,0 +1,13 @@
+local playerName = game.Players.LocalPlayer.Name
+local autoObject = workspace:FindFirstChild("SpawnedAuto")
+if autoObject then
+    local targetObject = autoObject:FindFirstChild("Auto" .. playerName)
+    if targetObject then
+        targetObject.AC6_FE_Sounds:FireServer(table.unpack({
+            [1] = "newSound",
+            [2] = "Rev",
+            [3] = 0,
+            [4] = true,
+        }))
+    end
+end
